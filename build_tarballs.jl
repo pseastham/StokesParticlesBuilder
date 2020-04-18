@@ -3,7 +3,7 @@
 using BinaryBuilder, Pkg
 
 name = "figtree"
-version = v"1.0.0"
+version = v"1.1.0"
 
 # Collection of sources required to complete build
 sources = [
@@ -13,10 +13,11 @@ sources = [
 # Bash recipe for building across all platforms
 script = raw"""
 cd $WORKSPACE/srcdir
-mkdir ../destdir/lib64
 cd figtree-0.9.3/
 make
-cd lib/
+mkdir ../../destdir/lib64
+cd lib
+ls
 mv libann_figtree_version.so ../../../destdir/lib64/libann_figtree_version.so
 mv libfigtree.so ../../../destdir/lib64/libfigtree.so
 """
@@ -24,8 +25,10 @@ mv libfigtree.so ../../../destdir/lib64/libfigtree.so
 # These are the platforms we will build for by default, unless further
 # platforms are passed in on the command line
 platforms = [
+    MacOS(:x86_64),
     Linux(:x86_64, libc=:glibc)
 ]
+
 
 # The products that we will ensure are always built
 products = [
