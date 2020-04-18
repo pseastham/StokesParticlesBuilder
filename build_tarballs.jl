@@ -3,7 +3,7 @@
 using BinaryBuilder, Pkg
 
 name = "figtree"
-version = v"1.1.0"
+version = v"1.0.0"
 
 # Collection of sources required to complete build
 sources = [
@@ -25,7 +25,6 @@ mv libfigtree.so ../../../destdir/lib64/libfigtree.so
 # These are the platforms we will build for by default, unless further
 # platforms are passed in on the command line
 platforms = [
-    MacOS(:x86_64),
     Linux(:x86_64, libc=:glibc)
 ]
 
