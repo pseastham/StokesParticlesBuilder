@@ -1,0 +1,9 @@
+[[figtree]]
+arch = "x86_64"
+git-tree-sha1 = "a177fcc5d49a4ac476e2707464ff51917b00cc4d"
+libc = "glibc"
+os = "linux"
+
+    [[figtree.download]]
+    sha256 = "d9fa65de6686099b1cde4b406ea0359214bd0fb20462b642cc0935a771fbf1b2"
+    url = "https://github.com/pseastham/StokesParticlesBuilder/releases/download/figtree-v1.0.0+0/figtree.v1.0.0.x86_64-linux-gnu.tar.gz"
