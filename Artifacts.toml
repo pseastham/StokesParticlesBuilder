@@ -6,4 +6,4 @@ os = "linux"
 
     [[figtree.download]]
     sha256 = "0061081428897ec066bfc3cc1650b461e674115e1f94d7af4f8f04ff3175766e"
-    url = "https://github.com/pseastham/StokesParticlesBuilder/releases/download/figtree/figtree_jll.jl"
+    url = "https://github.com/pseastham/StokesParticlesBuilder/releases/download/figtree/figtree.v1.0.0.x86_64-linux-gnu.tar.gz"
