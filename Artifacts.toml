@@ -5,5 +5,5 @@ libc = "glibc"
 os = "linux"
 
     [[figtree.download]]
-    sha256 = "d9fa65de6686099b1cde4b406ea0359214bd0fb20462b642cc0935a771fbf1b2"
-    url = "https://github.com/pseastham/StokesParticlesBuilder/releases/download/figtree-v1.0.0+0/figtree.v1.0.0.x86_64-linux-gnu.tar.gz"
+    sha256 = "0061081428897ec066bfc3cc1650b461e674115e1f94d7af4f8f04ff3175766e"
+    url = "https://github.com/pseastham/StokesParticlesBuilder/releases/download/figtree/figtree.v1.0.0.x86_64-linux-gnu.tar.gz"
